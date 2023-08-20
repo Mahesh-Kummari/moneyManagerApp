@@ -1,0 +1,129 @@
+/* Write your CSS here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+.money-manager-bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 5vh;
+}
+.responsive-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.header {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  padding: 5vh;
+  margin: 4vh 0;
+  overflow: hidden;
+  border-radius: 2vh;
+}
+.header h1,
+p {
+  color: #475569;
+  text-align: center;
+}
+.header span {
+  color: #0b69ff;
+}
+.header p {
+  font-weight: 500;
+  margin-top: 2vh;
+}
+.income-expenses-container {
+  width: 100%;
+  margin: 4vh 0;
+}
+.inputs-container,
+.history-section {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh;
+  border: 1px solid #d7dfe9;
+  border-radius: 2vh;
+}
+.history-section {
+  margin: 5vh 0;
+}
+.inputs-container h1 {
+  color: #475569;
+}
+.label {
+  color: #7e858e;
+  margin: 2.5vh 0 1vh 0;
+}
+.input {
+  padding: 1.5vh;
+  border: 1px solid #d7dfe9;
+  border-radius: 0.5vh;
+}
+.add-btn {
+  background-color: #0b69ff;
+  color: #fff;
+  margin: 3vh 0;
+  max-width: 80px;
+  padding: 2vh 1vh;
+  border-radius: 1.5vh;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.history-section h1 {
+  color: #475569;
+  margin-bottom: 2vh;
+}
+.transactions-details-card {
+  display: flex;
+  align-items: center;
+  padding: 2vh;
+  border: 1px solid #d7dfe9;
+  gap: 0%;
+}
+.transactions-details-card .title {
+  font-weight: 600;
+  color: #1e293b;
+  padding-right: 6vw;
+}
+.transaction-history-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .header h1,
+  p {
+    text-align: start;
+    padding-left: 8vh;
+  }
+  .income-expenses-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .add-transaction-history-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .inputs-container {
+    width: 40%;
+  }
+  .history-section {
+    width: 55%;
+    padding-top: -20%;
+  }
+  .transactions-details-card {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .transaction-history-list {
+  }
+}
